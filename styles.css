@@ -1,0 +1,25 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.card {
+    background: white;
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    padding: .5rem;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 150ms;
+    height: 200px;
+    font-size: xx-large;
+    width: 300px;
+    text-align: center;
+}
+
+.card.show {
+    transform: translateX(0);
+    opacity: 1;
+}
